@@ -6,12 +6,12 @@ services:
     ports:
       - "5000:5000"
     volumes:
-      - ./server:/code
+      - ./server/code:/code
   web:
     build: web
     command: npm start
     ports:
       - "3000:3000"
     volumes:
-     - ./web:/code
+     - ./web/code:/code
 
