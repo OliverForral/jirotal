@@ -1,6 +1,6 @@
 import { NOT_FOUND } from 'redux-first-router'
 
-const noteReducer = (state = null, action = {}) => {
+export default (state = null, action = {}) => {
   switch(action.type) {
     case 'HOME':
     case NOT_FOUND:
@@ -11,5 +11,3 @@ const noteReducer = (state = null, action = {}) => {
       return state;
   };
 }
-
-export default noteReducer;
