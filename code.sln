@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jirotal", "Jirotal\Jirotal.csproj", "{1CF3576A-7702-44D8-9A98-42498D245577}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jirotal.Tests", "Jirotal.Tests\Jirotal.Tests.csproj", "{AB329D3F-D805-4F85-8666-4154D077CA24}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,17 @@ Global
 		{1CF3576A-7702-44D8-9A98-42498D245577}.Release|x64.Build.0 = Release|x64
 		{1CF3576A-7702-44D8-9A98-42498D245577}.Release|x86.ActiveCfg = Release|x86
 		{1CF3576A-7702-44D8-9A98-42498D245577}.Release|x86.Build.0 = Release|x86
+		{AB329D3F-D805-4F85-8666-4154D077CA24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB329D3F-D805-4F85-8666-4154D077CA24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB329D3F-D805-4F85-8666-4154D077CA24}.Debug|x64.ActiveCfg = Debug|x64
+		{AB329D3F-D805-4F85-8666-4154D077CA24}.Debug|x64.Build.0 = Debug|x64
+		{AB329D3F-D805-4F85-8666-4154D077CA24}.Debug|x86.ActiveCfg = Debug|x86
+		{AB329D3F-D805-4F85-8666-4154D077CA24}.Debug|x86.Build.0 = Debug|x86
+		{AB329D3F-D805-4F85-8666-4154D077CA24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB329D3F-D805-4F85-8666-4154D077CA24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB329D3F-D805-4F85-8666-4154D077CA24}.Release|x64.ActiveCfg = Release|x64
+		{AB329D3F-D805-4F85-8666-4154D077CA24}.Release|x64.Build.0 = Release|x64
+		{AB329D3F-D805-4F85-8666-4154D077CA24}.Release|x86.ActiveCfg = Release|x86
+		{AB329D3F-D805-4F85-8666-4154D077CA24}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
