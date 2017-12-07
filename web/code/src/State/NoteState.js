@@ -18,6 +18,7 @@ export default (state = initialState, action = {}) => {
         id: action.payload.id,
       };
     default:
-      return state;
   };
+
+  return state;
 }
