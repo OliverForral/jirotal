@@ -11,12 +11,12 @@ body {
     "header header header header  header header header header"
     "todo   doing  review testing pwner  scrra  ready  done  "
     ;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(8, 1fr);
   grid-template-rows: 50px 1fr;
   height: 100vh;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .kanban {
     display: grid;
     grid-gap: 1em;
@@ -32,51 +32,61 @@ body {
       "done"
       ;
     grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr repeat(8, 1fr);
     height: 100vh;
   }
 }
 
 .header {
+  background-color: #cccccc;
   grid-area: header;
-  background-color: #cccccc
+  min-height: 50px;
 }
 
 .todo {
+  background-color: #ccccff;
   grid-area: todo;
-  background-color: #ccccff
+  min-height: 100px;
 }
 
 .doing {
+  background-color: #ccffcc;
   grid-area: doing;
-  background-color: #ccffcc
+  min-height: 100px;
 }
 
 .review {
+  background-color: #ffcccc;
   grid-area: review;
-  background-color: #ffcccc
+  min-height: 100px;
 }
 
 .testing {
+  background-color: #ccffff;
   grid-area: testing;
-  background-color: #ccffff
+  min-height: 100px;
 }
 
 .pwner {
+  background-color: #ffccff;
   grid-area: pwner;
-  background-color: #ffccff
+  min-height: 100px;
 }
 
 .scrra {
+  background-color: #ffffcc;
   grid-area: scrra;
-  background-color: #ffffcc
+  min-height: 100px;
 }
 
 .ready {
+  background-color: #aaaaff;
   grid-area: ready;
-  background-color: #aaaaff
+  min-height: 100px;
 }
 
 .done {
+  background-color: #aaffaa;
   grid-area: done;
-  background-color: #aaffaa
+  min-height: 100px;
 }

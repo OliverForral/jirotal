@@ -3,7 +3,7 @@ import Link from 'redux-first-router-link';
 
 export default () => (
   <span class="kanban">
-    <header className="header">Header</header>
+    <header className="header">Jirotal</header>
     <span className="todo">To Do</span>
     <span className="doing">In Progress</span>
     <span className="review">Code Review</span>
