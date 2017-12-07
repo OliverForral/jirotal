@@ -2,7 +2,7 @@ version: "3"
 services:
   server:
     build: server
-    command: dotnet run --project Jirotal
+    command: dotnet run
     ports:
       - "5000:5000"
     volumes:
