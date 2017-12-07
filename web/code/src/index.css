@@ -18,7 +18,7 @@ body {
 }
 
 .kanban {
-  background-color: #000000;
+  background-color: #103941;
   display: grid;
   grid-area: kanban;
   grid-gap: 1em;
@@ -53,51 +53,51 @@ body {
 }
 
 .header {
-  background-color: #cccccc;
+  background-color: #e6c5ac;
   grid-area: header;
 }
 
 .navigation {
-  background-color: #319b88;
+  background-color: #315a7b;
   grid-area: navigation;
 }
 
 .todo {
-  background-color: #ccccff;
+  background-color: #528bac;
   grid-area: todo;
 }
 
 .doing {
-  background-color: #ccffcc;
+  background-color: #f6d5bd;
   grid-area: doing;
 }
 
 .review {
-  background-color: #ffcccc;
+  background-color: #a47352;
   grid-area: review;
 }
 
 .testing {
-  background-color: #ccffff;
+  background-color: #ffffff;
   grid-area: testing;
 }
 
 .pwner {
-  background-color: #ffccff;
+  background-color: #625120;
   grid-area: pwner;
 }
 
 .scrra {
-  background-color: #ffffcc;
+  background-color: #cdcdcd;
   grid-area: scrra;
 }
 
 .ready {
-  background-color: #aaaaff;
+  background-color: #73a4bd;
   grid-area: ready;
 }
 
 .done {
-  background-color: #aaffaa;
+  background-color: #737373;
   grid-area: done;
 }
