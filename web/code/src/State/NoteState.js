@@ -1,12 +1,22 @@
 import { NOT_FOUND } from 'redux-first-router'
 
-export default (state = null, action = {}) => {
+const initialState = {
+  id: null,
+}
+
+export default (state = initialState, action = {}) => {
   switch(action.type) {
     case 'HOME':
     case NOT_FOUND:
-      return null;
-    case 'USER':
-      return action.payload.id;
+      return {
+        ...state,
+        id: null,
+      };
+    case 'NOTE':
+      return {
+        ...state,
+        id: action.payload.id,
+      };
     default:
       return state;
   };

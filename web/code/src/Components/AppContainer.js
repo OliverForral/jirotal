@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import App from './App';
 
-const mapStateToProps = ({ noteId }) => ({ noteId });
+const mapStateToProps = ({ note }) => ({ note });
 const mapDispatchToProps = (dispatch) => ({
   onClick: () => dispatch({ type: 'NOTE', payload: { id: 5 } })
 });

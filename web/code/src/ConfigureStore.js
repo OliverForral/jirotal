@@ -10,12 +10,10 @@ const routesMap = {
   NOTE: '/note/:id',
 };
 
-const { reducer, middleware } = connectRoutes(history, routesMap);
+const { reducer, middleware, enhancer } = connectRoutes(history, routesMap);
 
 const rootReducer = combineReducers({ location: reducer, note: noteReducer });
 const middlewares = applyMiddleware(middleware);
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const store = createStore(rootReducer, composeEnhancers(middlewares));
 
-export default store;
-
+export default createStore(rootReducer, composeEnhancers(enhancer, middlewares));
