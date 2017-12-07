@@ -1,27 +1,43 @@
 body {
+  font-family: sans-serif;
+  font-size: 10px;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+}
+
+#root {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "navigation"
+    "kanban"
+  ;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 25px 1fr;
+  min-height: 100vh;
 }
 
 .kanban {
+  background-color: #000000;
   display: grid;
+  grid-area: kanban;
   grid-gap: 1em;
   grid-template-areas:
-    "header header header header  header header header header"
     "todo   doing  review testing pwner  scrra  ready  done  "
-    ;
+  ;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 50px 1fr;
-  height: 100vh;
+  grid-template-rows: 1fr;
+  min-height: 100%;
+  padding: 0 2.5rem;
 }
 
 @media screen and (max-width: 900px) {
+  body {
+    font-size: 20px;
+  }
+
   .kanban {
-    display: grid;
-    grid-gap: 1em;
     grid-template-areas:
-      "header"
       "todo"
       "doing"
       "review"
@@ -30,63 +46,58 @@ body {
       "scrra"
       "ready"
       "done"
-      ;
+    ;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr repeat(8, 1fr);
-    height: 100vh;
+    grid-template-rows: repeat(8, 1fr);
   }
 }
 
 .header {
   background-color: #cccccc;
   grid-area: header;
-  min-height: 50px;
+}
+
+.navigation {
+  background-color: #319b88;
+  grid-area: navigation;
 }
 
 .todo {
   background-color: #ccccff;
   grid-area: todo;
-  min-height: 100px;
 }
 
 .doing {
   background-color: #ccffcc;
   grid-area: doing;
-  min-height: 100px;
 }
 
 .review {
   background-color: #ffcccc;
   grid-area: review;
-  min-height: 100px;
 }
 
 .testing {
   background-color: #ccffff;
   grid-area: testing;
-  min-height: 100px;
 }
 
 .pwner {
   background-color: #ffccff;
   grid-area: pwner;
-  min-height: 100px;
 }
 
 .scrra {
   background-color: #ffffcc;
   grid-area: scrra;
-  min-height: 100px;
 }
 
 .ready {
   background-color: #aaaaff;
   grid-area: ready;
-  min-height: 100px;
 }
 
 .done {
   background-color: #aaffaa;
   grid-area: done;
-  min-height: 100px;
 }

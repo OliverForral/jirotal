@@ -2,15 +2,14 @@ import React from 'react';
 import Link from 'redux-first-router-link';
 
 export default () => (
-  <span class="kanban">
-    <header className="header">Jirotal</header>
-    <span className="todo">To Do</span>
-    <span className="doing">In Progress</span>
-    <span className="review">Code Review</span>
-    <span className="testing">In Testing</span>
-    <span className="pwner">Waiting PO</span>
-    <span className="scrra">SCR/RA</span>
-    <span className="ready">Ready To Merge</span>
-    <span className="done">Done</span>
-  </span>
+  <main className="kanban">
+    <section className="todo"><h2>To Do</h2></section>
+    <section className="doing"><h2>In Progress</h2></section>
+    <section className="review"><h2>Code Review</h2></section>
+    <section className="testing"><h2>In Testing</h2></section>
+    <section className="pwner"><h2>Waiting PO</h2></section>
+    <section className="scrra"><h2>SCR/RA</h2></section>
+    <section className="ready"><h2>Ready To Merge</h2></section>
+    <section className="done"><h2>Done</h2></section>
+  </main>
 );
