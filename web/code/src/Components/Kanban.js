@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'redux-first-router-link';
 
-export default () =>
+export default () => (
   <span class="kanban">
     <header className="header">Header</header>
     <span className="todo">To Do</span>
@@ -12,4 +12,5 @@ export default () =>
     <span className="scrra">SCR/RA</span>
     <span className="ready">Ready To Merge</span>
     <span className="done">Done</span>
-  </span>;
+  </span>
+);
