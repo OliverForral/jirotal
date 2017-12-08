@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
-import App from './App';
+import WorkItemDetail from './WorkItemDetail';
 
 const mapStateToProps = ({ route }) => ({ route });
 const mapDispatchToProps = dispatch => ({});
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(WorkItemDetail);

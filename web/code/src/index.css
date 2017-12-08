@@ -10,25 +10,71 @@ body {
   grid-template-areas:
     "header"
     "navigation"
-    "kanban"
+    "main"
   ;
   grid-template-columns: 1fr;
   grid-template-rows: 100px 25px 1fr;
   min-height: 100vh;
 }
 
+.header {
+  background-color: #e6c5ac;
+  grid-area: header;
+}
+
+.navigation {
+  background-color: #315a7b;
+  grid-area: navigation;
+}
+
+main {
+  background-color: #acaccd;
+  grid-area: main;
+  min-height: 100%;
+  padding: 0 2.5rem;
+}
+
+.landing {
+  background-color: #414183;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas:
+    "section1 section2"
+    "section3 section4"
+  ;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.section1 {
+  background-color: #7383ac;
+  grid-area: section1;
+}
+
+.section2 {
+  background-color: #189c94;
+  grid-area: section2;
+}
+
+.section3 {
+  background-color: #bd314a;
+  grid-area: section3;
+}
+
+.section4 {
+  background-color: #eeeeff;
+  grid-area: section4;
+}
+
 .kanban {
   background-color: #103941;
   display: grid;
-  grid-area: kanban;
   grid-gap: 1em;
   grid-template-areas:
-    "todo   doing  review testing pwner  scrra  ready  done  "
+    "todo doing review testing pwner scrra ready done"
   ;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: 1fr;
-  min-height: 100%;
-  padding: 0 2.5rem;
 }
 
 @media screen and (max-width: 900px) {
@@ -50,16 +96,6 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 1fr);
   }
-}
-
-.header {
-  background-color: #e6c5ac;
-  grid-area: header;
-}
-
-.navigation {
-  background-color: #315a7b;
-  grid-area: navigation;
 }
 
 .todo {

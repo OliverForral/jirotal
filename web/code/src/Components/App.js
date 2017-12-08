@@ -1,17 +1,19 @@
 import React from 'react';
+import Link from 'redux-first-router-link';
 import Kanban from './Kanban';
-import Note from './Note';
+import Landing from './Landing';
+import WorkItemDetailContainer from './WorkItemDetailContainer';
+import NotFound from './NotFound';
 
-export default ({ note }) => 
-  ([
-    <header className="header">
-      <h1>Jirotal</h1>
-    </header>,
-    <nav className="navigation">Navigation</nav>,
-    main(note)
-  ])
-
-
-const main = (note) => {
-  return !note.id ? <Kanban /> : <Note note={note} />;
-};
+export default ({ route }) => [
+  <header className="header">
+    <h1>Jirotal</h1>
+  </header>,
+  <nav className="navigation">
+    <Link to="/work-item/new">New Work Item</Link>
+  </nav>,
+  <Kanban route={route} />,
+  <Landing route={route} />,
+  <WorkItemDetailContainer route={route} />,
+  <NotFound route={route} />,
+];

@@ -2,23 +2,23 @@
 
 namespace App\Controller;
 
-use App\Entity\Note;
+use App\Entity\WorkItem;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
-class NoteController extends Controller
+class WorkItemController extends Controller
 {
     /**
-     * @Route("/notes/get-all", methods={"GET"})
+     * @Route("/work-items/get-all", methods={"GET"})
      */
-    public function getAllNotes()
+    public function getAllWorkItems()
     {
         $entityManager = $this->getDoctrine()->getManager();
-        $noteRepository = $this->getDoctrine()->getRepository(Note::class);
-        $notes = $noteRepository->findAll();
+        $workItemRepository = $this->getDoctrine()->getRepository(WorkItem::class);
+        $workItems = $workItemRepository->findAll();
 
-        $data = $notes;
+        $data = $workItems;
         $status = 200;
         $headers = array();
         $context = array();
@@ -27,25 +27,21 @@ class NoteController extends Controller
     }
 
     /**
-     * @Route("/notes/create-new", methods={"POST"})
+     * @Route("/work-items/create-new", methods={"POST"})
      */
     public function createNew(Request $request)
     {
-        $noteData = $request->request->get('note');
+        $workItemData = $request->request->get('workItem');
 
         $entityManager = $this->getDoctrine()->getManager();
         
-        $note = new Note();
-        $note->setTitle($noteData['title']);
-        $note->setDescription($noteData['description']);
-        $entityManager->persist($note);
+        $workItem = new WorkItem();
+        $workItem->setTitle($workItemData['title']);
+        $workItem->setDescription($workItemData['description']);
+        $entityManager->persist($workItem);
         $entityManager->flush();
 
-        $data = array(
-            'id' => $note->getId(),
-            'title' => $note->getTitle(),
-            'description' => $note->getDescription(),
-        );
+        $data = $workItemData;
         $status = 200;
         $headers = array();
         $context = array();
