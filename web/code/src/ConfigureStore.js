@@ -8,8 +8,8 @@ const history = createHistory();
 
 const routesMap = {
   HOME: '/',
-  SPRINT_VIEW: '/sprint/current',
-  WORK_ITEM_NEW: '/work-item/new',
+  SPRINT_VIEW: '/current-sprint',
+  WORK_ITEM_NEW: '/new-work-item',
   WORK_ITEM_VIEW: '/work-item/:id',
 };
 

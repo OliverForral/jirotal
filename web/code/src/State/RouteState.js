@@ -32,7 +32,7 @@ export const routeReducer = (state = initialState, action = {}) => {
         workItemId: null,
         route: action.type,
       };
-  default:
+    default:
   }
 
   return state;

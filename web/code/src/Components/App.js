@@ -7,10 +7,18 @@ import NotFound from './NotFound';
 
 export default ({ route }) => [
   <header className="header">
-    <h1>Jirotal</h1>
+    <span className="jir">
+      <Link to="/">Jir</Link>
+    </span>
+    <span className="otal">
+      <Link to="/">otal</Link>
+    </span>
   </header>,
   <nav className="navigation">
-    <Link to="/work-item/new">New Work Item</Link>
+    <Link to="/incoming-work-items">Proposed Work Items</Link>
+    <Link to="/charts-and-reports">Charts and Reports</Link>
+    <Link to="/new-work-item">New Work Item</Link>
+    <Link to="/current-sprint">Current Sprint</Link>
   </nav>,
   <Kanban route={route} />,
   <Landing route={route} />,
