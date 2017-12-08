@@ -1,3 +1,3 @@
-FROM microsoft/dotnet:2.0-sdk
+FROM php:7.2-alpine
 RUN mkdir /code
 WORKDIR /code
