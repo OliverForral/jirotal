@@ -9,6 +9,7 @@ export const routeReducer = (state = initialState, action = {}) => {
   switch (action.type) {
     case 'HOME':
     case NOT_FOUND:
+    case 'WORK_ITEM_LIST':
       return {
         ...state,
         workItemId: null,

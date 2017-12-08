@@ -7,8 +7,8 @@ export default ({ route }) => {
       return (
         <main className="landing">
           <section>
-            <h2>Proposed Work Items</h2>
-            <Link to="/incoming-work-items">Go</Link>
+            <h2>Work Item List</h2>
+            <Link to="/work-item-list">Go</Link>
           </section>
           <section>
             <h2>Charts and Reports</h2>

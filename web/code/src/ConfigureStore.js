@@ -10,6 +10,7 @@ const routesMap = {
   HOME: '/',
   SPRINT_VIEW: '/current-sprint',
   WORK_ITEM_NEW: '/new-work-item',
+  WORK_ITEM_LIST: '/work-item-list',
   WORK_ITEM_VIEW: '/work-item/:id',
 };
 
