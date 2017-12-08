@@ -33,6 +33,10 @@ a {
   padding-left: 1px;
 }
 
+label {
+  font-size: 1.4rem;
+}
+
 #root {
   display: grid;
   grid-template-areas:
