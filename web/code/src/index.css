@@ -6,18 +6,31 @@ body {
 }
 
 a {
+  color: #eeeeee;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.jir,
+.otal{
+  padding: 0.5rem;
+  background-color: #ffffff;
+  color: #000000;
+  display: inline-block;
 }
 
 .jir {
   border: 2px solid #ff0000;
   border-radius: 25px 0 0 25px;
-  background-color: #ffffff;
+  margin: 10px 0 0 10px;
+  padding-right: 1px;
 }
 
 .otal {
   border: 2px solid #ffff00;
   border-radius: 0 25px 25px 0;
-  background-color: #ffffff;
+  margin-top: 10px;
+  padding-left: 1px;
 }
 
 #root {
@@ -28,7 +41,7 @@ a {
     "main"
   ;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 25px 1fr;
+  grid-template-rows: 1fr 1fr 10fr;
   min-height: 100vh;
 }
 
@@ -41,6 +54,16 @@ a {
   background-color: #315a7b;
   grid-area: navigation;
 }
+
+.navigation a {
+  display: inline-block;
+  padding: .5rem 1rem;
+  border-right: 1px solid #FFF;
+  height: 100%;
+}
+  .navigation a:last-child{
+    border-right: none;
+  }
 
 main {
   background-color: #acaccd;
@@ -92,7 +115,7 @@ main {
   grid-template-rows: 1fr;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 85rem) {
   body {
     font-size: 20px;
   }
@@ -121,6 +144,16 @@ main {
     ;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 1fr);
+  }
+  .navigation{
+    text-align: center;
+  }
+  .navigation a{
+    border-right: none;
+    border-bottom: 1px solid #FFF;
+    padding: .5rem 0;
+    display: block;
+    height: auto;
   }
 }
 
@@ -162,4 +195,23 @@ main {
 .done {
   background-color: #737373;
   grid-area: done;
+}
+
+article {
+  background-color: #5a7b6a;
+  display: grid;
+  grid-template-columns: 1fr 400px 1fr;
+  width: 100%;
+}
+
+form {
+  grid-column-start: 2;
+}
+
+fieldset {
+  background-color: #294a52;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 400px;
 }

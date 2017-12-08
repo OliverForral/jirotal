@@ -7,14 +7,11 @@ import NotFound from './NotFound';
 
 export default ({ route }) => [
   <header className="header">
-    <span className="jir">
-      <Link to="/">Jir</Link>
-    </span>
-    <span className="otal">
-      <Link to="/">otal</Link>
-    </span>
+    <Link to="/" className="jir">Jir</Link>
+    <Link to="/" className="otal">otal</Link>
   </header>,
   <nav className="navigation">
+    <Link to="/">Home</Link>
     <Link to="/incoming-work-items">Proposed Work Items</Link>
     <Link to="/charts-and-reports">Charts and Reports</Link>
     <Link to="/new-work-item">New Work Item</Link>
